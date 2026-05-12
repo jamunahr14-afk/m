@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Home</title>
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Google Fonts (Inter) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top py-3">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">MyPortfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/education.html">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/certifications.html">Certifications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/contact.html">Contact</a>
+          </li>
+          <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+              <i id="theme-icon" class="fas fa-moon"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="row align-items-center flex-column-reverse flex-lg-row">
+        <!-- Text Content -->
+        <div class="col-lg-6 text-center text-lg-start mt-5 mt-lg-0" data-aos="fade-right">
+          <h1 class="display-4 fw-bold mb-3">Hi, I'm <span style="color: var(--primary-color);">Mamatha</span></h1>
+          <h2 class="h3 mb-4 text-muted">
+            I am a <span id="typing-text" style="color: var(--secondary-color);"></span><span class="typing-cursor"></span>
+          </h2>
+          <p class="lead mb-5">
+            Passionate about creating modern, professional, and responsive web applications. I love turning complex problems into simple, beautiful, and intuitive designs.
+          </p>
+          <div class="d-flex justify-content-center justify-content-lg-start gap-3 flex-wrap">
+            <a href="images/resume.docx" target="_blank" class="btn btn-primary shadow-sm"><i class="fas fa-eye me-2"></i>View Resume</a>
+            <a href="images/resume.docx" download class="btn btn-outline-primary shadow-sm"><i class="fas fa-download me-2"></i>Download Resume</a>
+            <a href="pages/contact.html" class="btn btn-primary shadow-sm"><i class="fas fa-envelope me-2"></i>Contact Me</a>
+          </div>
+        </div>
+        <!-- Profile Image -->
+        <div class="col-lg-6 text-center" data-aos="fade-left">
+          <img src="images/profile.png" alt="Mamatha Profile" class="hero-img img-fluid" onerror="this.onerror=null; this.src='https://via.placeholder.com/300?text=Profile+Photo';">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p class="mb-0 text-muted">&copy; 2026 MyPortfolio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- AOS Animation JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+  <!-- Custom JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Certifications</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top py-3">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">MyPortfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="education.html">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="certifications.html">Certifications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+              <i id="theme-icon" class="fas fa-moon"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Certifications Section -->
+  <section class="mt-5 pt-5">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h2 class="display-5 fw-bold">Certifications</h2>
+        <div class="mx-auto" style="width: 50px; height: 3px; background-color: var(--primary-color);"></div>
+      </div>
+
+      <div class="row g-4">
+        
+        <!-- Certificate 1 -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card h-100 text-center p-3">
+            <i class="fas fa-certificate display-1 mb-3" style="color: var(--primary-color);"></i>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">Responsive Web Design</h5>
+              <p class="card-text text-muted mb-4">Issued by: freeCodeCamp</p>
+              <button type="button" class="btn btn-outline-primary mt-auto w-100" data-bs-toggle="modal" data-bs-target="#certModal1">
+                View Certificate
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificate 2 -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card h-100 text-center p-3">
+            <i class="fas fa-award display-1 mb-3" style="color: var(--primary-color);"></i>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">JavaScript Algorithms</h5>
+              <p class="card-text text-muted mb-4">Issued by: Udemy</p>
+              <button type="button" class="btn btn-outline-primary mt-auto w-100" data-bs-toggle="modal" data-bs-target="#certModal2">
+                View Certificate
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Future Certificate Placeholder -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="card h-100 text-center p-3" style="border: 2px dashed var(--glass-border); background-color: transparent; box-shadow: none;">
+            <i class="fas fa-plus-circle display-1 mb-3 text-muted"></i>
+            <div class="card-body d-flex flex-column justify-content-center">
+              <h5 class="card-title fw-bold text-muted">Future Certification</h5>
+              <p class="card-text text-muted">Learning in progress...</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Modals -->
+  <!-- Modal 1 -->
+  <div class="modal fade" id="certModal1" tabindex="-1" aria-labelledby="certModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content" style="background-color: var(--card-bg); color: var(--text-color);">
+        <div class="modal-header border-0">
+          <h5 class="modal-title" id="certModal1Label">Responsive Web Design</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="filter: var(--text-color) == '#e0e0e0' ? 'invert(1)' : 'none';"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="https://via.placeholder.com/800x600?text=Certificate+1" class="img-fluid border" alt="Certificate 1">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div class="modal fade" id="certModal2" tabindex="-1" aria-labelledby="certModal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content" style="background-color: var(--card-bg); color: var(--text-color);">
+        <div class="modal-header border-0">
+          <h5 class="modal-title" id="certModal2Label">JavaScript Algorithms</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="filter: var(--text-color) == '#e0e0e0' ? 'invert(1)' : 'none';"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="https://via.placeholder.com/800x600?text=Certificate+2" class="img-fluid border" alt="Certificate 2">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p class="mb-0 text-muted">&copy; 2026 MyPortfolio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>

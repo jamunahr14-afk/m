@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Contact</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top py-3">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">MyPortfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="education.html">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="certifications.html">Certifications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+              <i id="theme-icon" class="fas fa-moon"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contact Section -->
+  <section class="mt-5 pt-5">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h2 class="display-5 fw-bold">Get In Touch</h2>
+        <div class="mx-auto" style="width: 50px; height: 3px; background-color: var(--primary-color);"></div>
+        <p class="lead mt-3 text-muted">Have a question or want to work together?</p>
+      </div>
+
+      <div class="row">
+        <!-- Contact Information -->
+        <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-right">
+          <div class="glass-card h-100 p-4">
+            <h4 class="fw-bold mb-4">Contact Information</h4>
+            
+            <div class="d-flex mb-4">
+              <div class="me-3">
+                <i class="fas fa-map-marker-alt fa-2x" style="color: var(--primary-color);"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold mb-1">Location</h6>
+                <p class="text-muted mb-0">City, Country</p>
+              </div>
+            </div>
+
+            <div class="d-flex mb-4">
+              <div class="me-3">
+                <i class="fas fa-envelope fa-2x" style="color: var(--primary-color);"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold mb-1">Email</h6>
+                <p class="text-muted mb-0"><a href="mailto:example@email.com" class="text-decoration-none text-muted">example@email.com</a></p>
+              </div>
+            </div>
+
+            <div class="d-flex mb-5">
+              <div class="me-3">
+                <i class="fas fa-phone-alt fa-2x" style="color: var(--primary-color);"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold mb-1">Phone</h6>
+                <p class="text-muted mb-0">+1 234 567 890</p>
+              </div>
+            </div>
+
+            <h5 class="fw-bold mb-3">Follow Me</h5>
+            <div class="social-icons">
+              <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="col-lg-7" data-aos="fade-left">
+          <div class="glass-card p-4">
+            <h4 class="fw-bold mb-4">Send a Message</h4>
+            <form>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="name" class="form-label">Your Name</label>
+                  <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Your Email</label>
+                  <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="col-12">
+                  <label for="subject" class="form-label">Subject</label>
+                  <input type="text" class="form-control" id="subject" required>
+                </div>
+                <div class="col-12">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control" id="message" rows="5" required></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary w-100">Send Message <i class="fas fa-paper-plane ms-2"></i></button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p class="mb-0 text-muted">&copy; 2026 MyPortfolio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>

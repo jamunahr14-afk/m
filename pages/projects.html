@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Projects</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top py-3">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">MyPortfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="education.html">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="certifications.html">Certifications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+              <i id="theme-icon" class="fas fa-moon"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Projects Section -->
+  <section class="mt-5 pt-5">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h2 class="display-5 fw-bold">My Projects</h2>
+        <div class="mx-auto" style="width: 50px; height: 3px; background-color: var(--primary-color);"></div>
+        <p class="lead mt-3 text-muted">A collection of my recent work</p>
+      </div>
+
+      <div class="row g-4">
+        
+        <!-- Project 1 -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card h-100">
+            <div class="img-overflow-hidden">
+              <img src="https://via.placeholder.com/600x400?text=Project+1" class="card-img-top" alt="Project 1">
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">E-Commerce Platform</h5>
+              <p class="card-text">A fully functional e-commerce platform with product management, cart functionality, and secure checkout.</p>
+              <div class="mb-3">
+                <span class="badge bg-secondary me-1">HTML</span>
+                <span class="badge bg-secondary me-1">CSS</span>
+                <span class="badge bg-secondary me-1">JavaScript</span>
+                <span class="badge bg-secondary">Bootstrap</span>
+              </div>
+              <div class="mt-auto d-flex gap-2">
+                <a href="#" class="btn btn-primary btn-sm flex-grow-1"><i class="fas fa-external-link-alt me-1"></i> Live Demo</a>
+                <a href="#" class="btn btn-outline-primary btn-sm flex-grow-1"><i class="fab fa-github me-1"></i> Source Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card h-100">
+            <div class="img-overflow-hidden">
+              <img src="https://via.placeholder.com/600x400?text=Project+2" class="card-img-top" alt="Project 2">
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">Task Management App</h5>
+              <p class="card-text">A productivity app to help users manage daily tasks, set priorities, and track progress over time.</p>
+              <div class="mb-3">
+                <span class="badge bg-secondary me-1">React</span>
+                <span class="badge bg-secondary me-1">Node.js</span>
+                <span class="badge bg-secondary">MongoDB</span>
+              </div>
+              <div class="mt-auto d-flex gap-2">
+                <a href="#" class="btn btn-primary btn-sm flex-grow-1"><i class="fas fa-external-link-alt me-1"></i> Live Demo</a>
+                <a href="#" class="btn btn-outline-primary btn-sm flex-grow-1"><i class="fab fa-github me-1"></i> Source Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="card h-100">
+            <div class="img-overflow-hidden">
+              <img src="https://via.placeholder.com/600x400?text=Project+3" class="card-img-top" alt="Project 3">
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">Portfolio Website</h5>
+              <p class="card-text">A modern, responsive multi-page portfolio website with dark mode, animations, and clean UI.</p>
+              <div class="mb-3">
+                <span class="badge bg-secondary me-1">HTML</span>
+                <span class="badge bg-secondary me-1">CSS</span>
+                <span class="badge bg-secondary">JS</span>
+              </div>
+              <div class="mt-auto d-flex gap-2">
+                <a href="#" class="btn btn-primary btn-sm flex-grow-1"><i class="fas fa-external-link-alt me-1"></i> Live Demo</a>
+                <a href="#" class="btn btn-outline-primary btn-sm flex-grow-1"><i class="fab fa-github me-1"></i> Source Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p class="mb-0 text-muted">&copy; 2026 MyPortfolio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>
